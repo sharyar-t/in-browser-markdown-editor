@@ -1,3 +1,106 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/roboto-mono/RobotoMono-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/roboto-slab/RobotoSlab-Light.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/roboto-slab/RobotoSlab-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/roboto-slab/RobotoSlab-Bold.ttf') format('truetype');
+  }
+
+  :root {
+    --radius: 0.5rem;
+  }
+
+  textarea {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  textarea::-webkit-scrollbar {
+    display: none;
+  }
+
+  .preview {
+    font-family: "Roboto Slab", sans-serif;
+  }
+
+  .preview h1,
+  .preview h3,
+  .preview h4,
+  .preview h5,
+  .preview h6,
+  .preview b {
+    font-weight: 700;
+  }
+
+  .preview h1 {
+    font-size: 32px;
+  }
+
+  .preview h2 {
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  .preview h3 {
+    font-size: 24px;
+  }
+
+  .preview h4 {
+    font-size: 20px;
+  }
+
+  .preview h5 {
+    font-size: 16px;
+  }
+
+  .preview h6 {
+    font-size: 14px;
+    @apply text-orange-500;
+  }
+
+  .preview p, .preview b {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .preview pre {
+    @apply bg-slate-200 rounded p-6 text-sm;
+  }
+}
