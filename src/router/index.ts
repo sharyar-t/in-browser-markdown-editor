@@ -5,6 +5,11 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      name: 'Home',
+      component: () => import('@/views/HomeView.vue'),
+    },
+    {
+      path: '/:fileName',
       name: 'MarkdownCreate',
       component: () => import('@/views/MarkdownCreate.vue'),
     },
